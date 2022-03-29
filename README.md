@@ -1,7 +1,7 @@
 
 # Terraso django-allauth provider
 
-Pluggable [Django](https://www.djangoproject.com/) app to add Terraso as a provider to [django-allauth](https://django-allauth.readthedocs.io/en/latest/).
+Pluggable [Django](https://www.djangoproject.com/) app to add [Terraso](https://terraso.org) as a provider to [django-allauth](https://django-allauth.readthedocs.io/en/latest/).
 
 ## Installation
 
