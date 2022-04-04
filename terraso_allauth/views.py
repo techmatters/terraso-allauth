@@ -54,13 +54,15 @@ oauth2_login = OAuth2LoginView.adapter_view(TerrasoOAuth2Adapter)
 class OAuth2CallbackView(OAuth2View):
     def dispatch(self, request, *args, **kwargs):
         if "error" in request.GET or "code" not in request.GET:
-            # Distinguish cancel from error
             auth_error = request.GET.get("error", None)
+
             if auth_error == self.adapter.login_cancelled_error:
                 error = AuthError.CANCELLED
             else:
                 error = AuthError.UNKNOWN
+
             return render_authentication_error(request, self.adapter.provider_id, error=error)
+
         app = self.adapter.get_provider().get_app(self.request)
         client = self.get_client(self.request, app)
 
@@ -70,6 +72,7 @@ class OAuth2CallbackView(OAuth2View):
             token.app = app
             login = self.adapter.complete_login(request, app, token, response=access_token)
             login.token = token
+
             if self.adapter.supports_state:
                 login.state = SocialLogin.verify_and_unstash_state(
                     request, get_request_param(request, "state")
