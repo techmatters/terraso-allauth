@@ -8,7 +8,11 @@ attrs==21.4.0
     # via pytest
 black==22.3.0
     # via -r requirements/requirements-dev.in
-click==8.1.0
+certifi==2021.10.8
+    # via requests
+charset-normalizer==2.0.12
+    # via requests
+click==8.1.2
     # via
     #   black
     #   pip-tools
@@ -22,6 +26,8 @@ filelock==3.6.0
     #   virtualenv
 flake8==4.0.1
     # via -r requirements/requirements-dev.in
+idna==3.3
+    # via requests
 iniconfig==1.1.1
     # via pytest
 isort==5.10.1
@@ -67,6 +73,10 @@ pytest-cov==3.0.0
     # via -r requirements/requirements-dev.in
 pytest-django==4.5.2
     # via -r requirements/requirements-dev.in
+requests==2.27.1
+    # via responses
+responses==0.20.0
+    # via -r requirements/requirements-dev.in
 six==1.16.0
     # via
     #   tox
@@ -85,6 +95,10 @@ tox==3.24.5
     #   tox-pyenv
 tox-pyenv==1.1.0
     # via -r requirements/requirements-dev.in
+urllib3==1.26.9
+    # via
+    #   requests
+    #   responses
 virtualenv==20.14.0
     # via tox
 wheel==0.37.1
