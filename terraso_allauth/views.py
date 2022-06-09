@@ -27,7 +27,7 @@ class TerrasoOAuth2Adapter(OAuth2Adapter):
 
     @property
     def authorize_url(self):
-        return f"{self.terraso_base_url}auth/authorize"
+        return f"{self.terraso_base_url}oauth/authorize"
 
     @property
     def profile_url(self):

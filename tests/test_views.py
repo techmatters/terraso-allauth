@@ -37,7 +37,7 @@ def test_adapter_builds_access_token_url():
 def test_adapter_builds_authorize_url():
     adapter = TerrasoOAuth2Adapter(None)
 
-    assert f"{adapter.terraso_base_url}auth/authorize" == adapter.authorize_url
+    assert f"{adapter.terraso_base_url}oauth/authorize" == adapter.authorize_url
 
 
 def test_adapter_builds_profile_url():
