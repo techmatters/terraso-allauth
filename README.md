@@ -107,3 +107,24 @@ To run `tox`, we recommend running it in parallel:
 ```sh
 tox -p
 ```
+
+### Building and releasing
+
+Before building a new version to release, make sure a new git tag was created for the version. Then, run the following command to create a new build:
+
+```sh
+python -m build
+```
+
+Running the above command on the project directory, a new Python wheel will be created and properly versioned and named based on the git tags.
+
+After a new wheel was created, make sure you have the `twine` Python lib installed: `pip install twine`. Then, run the following command to upload the recent created wheel to PyPI:
+
+```sh
+python -m twine upload --verbose dist/*
+```
+
+It will be necessary to inform the PyPI username and password to successfully upload the packages.
+
+More information about packaging and distributing Python packages can be
+found on [official documentation](https://packaging.python.org/en/latest/tutorials/packaging-projects/).
