@@ -1,10 +1,10 @@
 import requests
+from allauth.socialaccount import app_settings
 from allauth.socialaccount.providers.oauth2.views import (
     OAuth2Adapter,
     OAuth2CallbackView,
     OAuth2LoginView,
 )
-from django.conf import settings
 
 from .provider import TerrasoProvider
 
@@ -13,25 +13,26 @@ class TerrasoOAuth2Adapter(OAuth2Adapter):
     provider_id = TerrasoProvider.id
 
     @property
-    def terraso_base_url(self):
-        if hasattr(settings, "TERRASO_BASE_API_URL") and settings.TERRASO_BASE_API_URL:
-            terraso_base_url = settings.TERRASO_BASE_API_URL
-        else:
-            terraso_base_url = "https://api.terraso.org/"
+    def base_url(self):
+        settings = app_settings.PROVIDERS.get(self.provider_id, {})
+        server_url = settings.get("SERVER_URL")
 
-        return terraso_base_url if terraso_base_url[-1] == "/" else f"{terraso_base_url}/"
+        if not server_url:
+            return "https://api.terraso.org"
+
+        return server_url.rstrip("/")
 
     @property
     def access_token_url(self):
-        return f"{self.terraso_base_url}oauth/token/"
+        return "%s/oauth/token/" % self.base_url
 
     @property
     def authorize_url(self):
-        return f"{self.terraso_base_url}oauth/authorize"
+        return "%s/oauth/authorize" % self.base_url
 
     @property
     def profile_url(self):
-        return f"{self.terraso_base_url}oauth/userinfo"
+        return "%s/oauth/userinfo" % self.base_url
 
     def complete_login(self, request, app, token, **kwargs):
         resp = requests.get(
@@ -40,8 +41,7 @@ class TerrasoOAuth2Adapter(OAuth2Adapter):
         )
         resp.raise_for_status()
         extra_data = resp.json()
-        login = self.get_provider().sociallogin_from_response(request, extra_data)
-        return login
+        return self.get_provider().sociallogin_from_response(request, extra_data)
 
 
 oauth2_login = OAuth2LoginView.adapter_view(TerrasoOAuth2Adapter)

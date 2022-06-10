@@ -12,38 +12,37 @@ User = get_user_model()
 
 def test_adapter_loads_url_from_settings(settings):
     url = "https://testing.terraso.org/"
-    settings.TERRASO_BASE_API_URL = url
+    settings.SOCIALACCOUNT_PROVIDERS["terraso"]["SERVER_URL"] = url
 
-    assert TerrasoOAuth2Adapter(None).terraso_base_url == url
-
-
-def test_adapter_apppend_slash_to_base_url(settings):
-    url = "https://testing.terraso.org"
-    settings.TERRASO_BASE_API_URL = url
-
-    assert TerrasoOAuth2Adapter(None).terraso_base_url == url + "/"
+    assert TerrasoOAuth2Adapter(None).base_url == url.rstrip("/")
 
 
-def test_adapter_default_base_url():
-    assert TerrasoOAuth2Adapter(None).terraso_base_url == "https://api.terraso.org/"
+def test_adapter_default_base_url(settings):
+    del(settings.SOCIALACCOUNT_PROVIDERS["terraso"]["SERVER_URL"])
+
+    assert TerrasoOAuth2Adapter(None).base_url == "https://api.terraso.org"
+
+    settings.SOCIALACCOUNT_PROVIDERS["terraso"]["SERVER_URL"] = None
+
+    assert TerrasoOAuth2Adapter(None).base_url == "https://api.terraso.org"
 
 
 def test_adapter_builds_access_token_url():
     adapter = TerrasoOAuth2Adapter(None)
 
-    assert f"{adapter.terraso_base_url}oauth/token/" in adapter.access_token_url
+    assert f"{adapter.base_url}/oauth/token/" in adapter.access_token_url
 
 
 def test_adapter_builds_authorize_url():
     adapter = TerrasoOAuth2Adapter(None)
 
-    assert f"{adapter.terraso_base_url}oauth/authorize" == adapter.authorize_url
+    assert f"{adapter.base_url}/oauth/authorize" == adapter.authorize_url
 
 
 def test_adapter_builds_profile_url():
     adapter = TerrasoOAuth2Adapter(None)
 
-    assert f"{adapter.terraso_base_url}oauth/userinfo" == adapter.profile_url
+    assert f"{adapter.base_url}/oauth/userinfo" == adapter.profile_url
 
 
 @pytest.mark.django_db
