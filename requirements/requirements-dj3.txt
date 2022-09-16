@@ -18,13 +18,13 @@ defusedxml==0.7.1
     # via python3-openid
 django==3.2
     # via
-    #   -r requirements/requirements-dj3.in
+    #   -r requirements-dj3.in
     #   django-allauth
 django-allauth==0.51.0
-    # via -r requirements/requirements-dj3.in
+    # via -r requirements-dj3.in
 idna==3.3
     # via requests
-oauthlib==3.2.0
+oauthlib==3.2.1
     # via requests-oauthlib
 pycparser==2.21
     # via cffi
