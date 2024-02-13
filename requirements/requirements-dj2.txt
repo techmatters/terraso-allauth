@@ -22,7 +22,7 @@ django-allauth==0.51.0
     # via -r requirements-dj2.in
 idna==3.3
     # via requests
-oauthlib==3.2.1
+oauthlib==3.2.2
     # via requests-oauthlib
 pycparser==2.21
     # via cffi
