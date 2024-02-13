@@ -10,7 +10,7 @@ cffi==1.15.0
     # via cryptography
 charset-normalizer==2.0.12
     # via requests
-cryptography==37.0.2
+cryptography==42.0.0
     # via pyjwt
 defusedxml==0.7.1
     # via python3-openid
@@ -27,7 +27,9 @@ oauthlib==3.2.1
 pycparser==2.21
     # via cffi
 pyjwt[crypto]==2.4.0
-    # via django-allauth
+    # via
+    #   django-allauth
+    #   pyjwt
 python3-openid==3.2.0
     # via django-allauth
 pytz==2022.1
