@@ -53,7 +53,7 @@ platformdirs==2.5.2
     # via
     #   black
     #   virtualenv
-pluggy==1.0.0
+pluggy==1.4.0
     # via
     #   pytest
     #   tox
