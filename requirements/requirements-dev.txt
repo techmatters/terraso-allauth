@@ -75,7 +75,7 @@ pytest-cov==3.0.0
     # via -r requirements-dev.in
 pytest-django==4.5.2
     # via -r requirements-dev.in
-requests==2.27.1
+requests==2.31.0
     # via responses
 responses==0.21.0
     # via -r requirements-dev.in
