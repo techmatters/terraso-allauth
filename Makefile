@@ -21,6 +21,8 @@ lock: pip-tools
 	CUSTOM_COMPILE_COMMAND="make lock" uv pip compile --upgrade --output-file requirements/requirements.txt requirements/requirements.in
 	CUSTOM_COMPILE_COMMAND="make lock" uv pip compile --upgrade --output-file requirements/requirements-dj2.txt requirements/requirements-dj2.in
 	CUSTOM_COMPILE_COMMAND="make lock" uv pip compile --upgrade --output-file requirements/requirements-dj3.txt requirements/requirements-dj3.in
+	CUSTOM_COMPILE_COMMAND="make lock" uv pip compile --upgrade --output-file requirements/requirements-dj4.txt requirements/requirements-dj4.in
+	CUSTOM_COMPILE_COMMAND="make lock" uv pip compile --upgrade --output-file requirements/requirements-dj5.txt requirements/requirements-dj5.in
 
 lock-dev: pip-tools
 	CUSTOM_COMPILE_COMMAND="make lock-dev" uv pip compile --upgrade --output-file requirements/requirements-dev.txt requirements/requirements-dev.in
