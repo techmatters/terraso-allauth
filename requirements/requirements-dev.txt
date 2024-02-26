@@ -102,7 +102,7 @@ tox-pyenv==1.1.0
     # via -r requirements-dev.in
 typing-extensions==4.9.0
     # via black
-urllib3==1.26.18
+urllib3==2.2.1
     # via
     #   requests
     #   responses
