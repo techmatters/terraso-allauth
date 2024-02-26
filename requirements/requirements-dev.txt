@@ -36,7 +36,7 @@ flake8==4.0.1
     # via -r requirements-dev.in
 idna==3.3
     # via requests
-iniconfig==1.1.1
+iniconfig==2.0.0
     # via pytest
 isort==5.13.2
     # via -r requirements-dev.in
