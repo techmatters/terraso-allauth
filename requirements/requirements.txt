@@ -20,7 +20,7 @@ django==4.0.5
     # via
     #   -r requirements.in
     #   django-allauth
-django-allauth==0.51.0
+django-allauth==0.54.0
     # via -r requirements.in
 idna==3.6
     # via requests

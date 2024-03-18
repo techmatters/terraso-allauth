@@ -20,7 +20,7 @@ django==3.2
     # via
     #   -r requirements-dj3.in
     #   django-allauth
-django-allauth==0.51.0
+django-allauth==0.54.0
     # via -r requirements-dj3.in
 idna==3.6
     # via requests
