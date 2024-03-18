@@ -6,7 +6,7 @@
 #
 asgiref==3.7.2
     # via django
-certifi==2023.7.22
+certifi==2024.2.2
     # via requests
 cffi==1.15.0
     # via cryptography
@@ -29,9 +29,7 @@ oauthlib==3.2.2
 pycparser==2.21
     # via cffi
 pyjwt[crypto]==2.4.0
-    # via
-    #   django-allauth
-    #   pyjwt
+    # via django-allauth
 python3-openid==3.2.0
     # via django-allauth
 requests==2.31.0
