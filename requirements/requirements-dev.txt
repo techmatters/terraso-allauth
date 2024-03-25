@@ -97,7 +97,7 @@ tomli==2.0.1
     #   pyproject-hooks
     #   pytest
     #   tox
-tox==4.14.1
+tox==4.14.2
     # via
     #   -r requirements-dev.in
     #   tox-pyenv
