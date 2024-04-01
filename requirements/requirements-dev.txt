@@ -83,9 +83,11 @@ pytest-cov==5.0.0
     # via -r requirements-dev.in
 pytest-django==4.8.0
     # via -r requirements-dev.in
+pyyaml==6.0.1
+    # via responses
 requests==2.31.0
     # via responses
-responses==0.21.0
+responses==0.25.0
     # via -r requirements-dev.in
 tomli==2.0.1
     # via
