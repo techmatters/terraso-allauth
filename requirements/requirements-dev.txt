@@ -32,7 +32,7 @@ filelock==3.13.1
     # via
     #   tox
     #   virtualenv
-flake8==4.0.1
+flake8==7.0.0
     # via -r requirements-dev.in
 idna==3.6
     # via requests
@@ -40,7 +40,7 @@ iniconfig==2.0.0
     # via pytest
 isort==5.13.2
     # via -r requirements-dev.in
-mccabe==0.6.1
+mccabe==0.7.0
     # via flake8
 mypy-extensions==1.0.0
     # via black
@@ -64,9 +64,9 @@ pluggy==1.4.0
     # via
     #   pytest
     #   tox
-pycodestyle==2.8.0
+pycodestyle==2.11.1
     # via flake8
-pyflakes==2.4.0
+pyflakes==3.2.0
     # via flake8
 pyproject-api==1.6.1
     # via tox
