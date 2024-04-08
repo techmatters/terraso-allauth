@@ -42,7 +42,7 @@ requests-oauthlib==2.0.0
     # via django-allauth
 sqlparse==0.4.4
     # via django
-typing-extensions==4.10.0
+typing-extensions==4.11.0
     # via asgiref
 urllib3==2.2.1
     # via requests
