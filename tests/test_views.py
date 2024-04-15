@@ -18,7 +18,7 @@ def test_adapter_loads_url_from_settings(settings):
 
 
 def test_adapter_default_base_url(settings):
-    del(settings.SOCIALACCOUNT_PROVIDERS["terraso"]["SERVER_URL"])
+    del settings.SOCIALACCOUNT_PROVIDERS["terraso"]["SERVER_URL"]
 
     assert TerrasoOAuth2Adapter(None).base_url == "https://api.terraso.org"
 
