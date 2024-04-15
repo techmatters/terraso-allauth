@@ -4,6 +4,10 @@ install:
 install-dev:
 	pip install -r requirements/requirements-dev.txt
 
+format:
+	isort --atomic terraso_allauth
+	black terraso_allauth
+
 lint:
 	flake8 terraso_allauth tests && isort -c terraso_allauth tests
 
