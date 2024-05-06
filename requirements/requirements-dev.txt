@@ -70,7 +70,7 @@ pyflakes==3.2.0
     # via flake8
 pyproject-api==1.6.1
     # via tox
-pyproject-hooks==1.0.0
+pyproject-hooks==1.1.0
     # via
     #   build
     #   pip-tools
@@ -96,7 +96,6 @@ tomli==2.0.1
     #   coverage
     #   pip-tools
     #   pyproject-api
-    #   pyproject-hooks
     #   pytest
     #   tox
 tox==4.15.0
