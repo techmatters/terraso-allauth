@@ -34,7 +34,7 @@ python3-openid==3.2.0
     # via django-allauth
 pytz==2024.1
     # via django
-requests==2.32.0
+requests==2.32.2
     # via
     #   django-allauth
     #   requests-oauthlib
