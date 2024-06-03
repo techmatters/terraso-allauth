@@ -32,7 +32,7 @@ pyjwt[crypto]==2.4.0
     # via django-allauth
 python3-openid==3.2.0
     # via django-allauth
-requests==2.32.2
+requests==2.32.3
     # via
     #   django-allauth
     #   requests-oauthlib
