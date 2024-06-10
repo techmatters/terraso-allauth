@@ -104,7 +104,7 @@ tox==4.15.1
     #   tox-pyenv
 tox-pyenv==1.1.0
     # via -r requirements-dev.in
-typing-extensions==4.12.1
+typing-extensions==4.12.2
     # via black
 urllib3==2.2.1
     # via
