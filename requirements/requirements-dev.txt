@@ -87,7 +87,7 @@ pyyaml==6.0.1
     # via responses
 requests==2.32.3
     # via responses
-responses==0.25.0
+responses==0.25.2
     # via -r requirements-dev.in
 tomli==2.0.1
     # via
