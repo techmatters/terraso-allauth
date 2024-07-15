@@ -16,7 +16,7 @@ cryptography==42.0.8
     # via pyjwt
 defusedxml==0.7.1
     # via python3-openid
-django==4.0.5
+django==5.0.7
     # via
     #   -r requirements.in
     #   django-allauth
