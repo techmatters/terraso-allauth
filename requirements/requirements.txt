@@ -22,7 +22,7 @@ django==4.0.5
     #   django-allauth
 django-allauth==0.54.0
     # via -r requirements.in
-idna==3.7
+idna==3.8
     # via requests
 oauthlib==3.2.2
     # via requests-oauthlib
