@@ -34,7 +34,7 @@ filelock==3.15.4
     #   virtualenv
 flake8==7.1.1
     # via -r requirements-dev.in
-idna==3.8
+idna==3.10
     # via requests
 iniconfig==2.0.0
     # via pytest
