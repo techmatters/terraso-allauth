@@ -4,8 +4,6 @@
 #
 #    make lock
 #
-asgiref==3.8.1
-    # via django
 certifi==2024.8.30
     # via requests
 cffi==1.17.1
@@ -16,7 +14,7 @@ cryptography==43.0.1
     # via pyjwt
 defusedxml==0.7.1
     # via python3-openid
-django==4.2.16
+django==2.2.28
     # via
     #   -r requirements-dj2.in
     #   django-allauth
@@ -32,6 +30,8 @@ pyjwt[crypto]==2.4.0
     # via django-allauth
 python3-openid==3.2.0
     # via django-allauth
+pytz==2024.2
+    # via django
 requests==2.32.3
     # via
     #   django-allauth
@@ -40,7 +40,5 @@ requests-oauthlib==2.0.0
     # via django-allauth
 sqlparse==0.5.1
     # via django
-typing-extensions==4.12.2
-    # via asgiref
 urllib3==2.2.3
     # via requests
