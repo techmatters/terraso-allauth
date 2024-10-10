@@ -98,14 +98,16 @@ tomli==2.0.1
     #   pyproject-api
     #   pytest
     #   tox
-tox==4.20.0
+tox==4.21.2
     # via
     #   -r requirements-dev.in
     #   tox-pyenv
 tox-pyenv==1.1.0
     # via -r requirements-dev.in
 typing-extensions==4.12.2
-    # via black
+    # via
+    #   black
+    #   tox
 urllib3==2.2.3
     # via
     #   requests
