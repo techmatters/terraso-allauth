@@ -89,7 +89,7 @@ requests==2.32.3
     # via responses
 responses==0.25.3
     # via -r requirements-dev.in
-tomli==2.0.2
+tomli==2.1.0
     # via
     #   black
     #   build
