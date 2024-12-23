@@ -40,5 +40,5 @@ requests-oauthlib==2.0.0
     # via django-allauth
 sqlparse==0.5.3
     # via django
-urllib3==2.2.3
+urllib3==2.3.0
     # via requests
