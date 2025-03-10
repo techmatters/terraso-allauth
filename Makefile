@@ -10,6 +10,9 @@ format:
 lint:
 	ruff check terraso_allauth
 
+setup-git-hooks:
+	@pre-commit install
+
 lock: pip-tools
 	CUSTOM_COMPILE_COMMAND="make lock" pip-compile --upgrade --output-file requirements/requirements.txt requirements/requirements.in
 	CUSTOM_COMPILE_COMMAND="make lock" pip-compile --upgrade --output-file requirements/requirements-dj2.txt requirements/requirements-dj2.in
