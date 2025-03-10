@@ -8,7 +8,7 @@ asgiref==3.8.1
     # via
     #   django
     #   django-allauth
-django==4.2.18
+django==5.1.7
     # via
     #   -r requirements-dj3.in
     #   django-allauth
