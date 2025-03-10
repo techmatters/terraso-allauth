@@ -5,11 +5,10 @@ install-dev:
 	pip install -r requirements/requirements-dev.txt
 
 format:
-	isort --atomic terraso_allauth
-	black terraso_allauth
+	ruff format terraso_allauth
 
 lint:
-	flake8 terraso_allauth tests && isort -c terraso_allauth tests
+	ruff check terraso_allauth
 
 lock: pip-tools
 	CUSTOM_COMPILE_COMMAND="make lock" pip-compile --upgrade --output-file requirements/requirements.txt requirements/requirements.in
