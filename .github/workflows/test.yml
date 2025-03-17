@@ -28,12 +28,10 @@ jobs:
           cache-dependency-glob: 'requirements**.txt'
 
       - name: Install Python dependencies
-        run: |
-          make install-dev
+        run: make install-dev DC_ENV=ci
 
       - name: Run lint checks
-        run: |
-          make lint
+        run: make lint
 
   test:
     runs-on: ubuntu-latest
@@ -63,5 +61,4 @@ jobs:
           pip install tox-gh-actions
 
       - name: Run tests
-        run: |
-          make test-ci
+        run: make test-ci
