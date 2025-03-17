@@ -1,8 +1,12 @@
+ifeq ($(DC_ENV),ci)
+	UV_FLAGS = "--system"
+endif
+
 install:
-	uv pip install -r requirements/requirements.txt
+	uv pip install -r requirements/requirements.txt $(UV_FLAGS)
 
 install-dev:
-	uv pip install -r requirements/requirements-dev.txt
+	uv pip install -r requirements/requirements-dev.txt $(UV_FLAGS)
 
 format:
 	ruff format terraso_allauth
