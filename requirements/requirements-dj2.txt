@@ -12,9 +12,7 @@ django==4.2.18
     # via
     #   -r requirements-dj2.in
     #   django-allauth
-django-allauth==65.4.1
+django-allauth==65.5.0
     # via -r requirements-dj2.in
 sqlparse==0.5.3
     # via django
-typing-extensions==4.12.2
-    # via asgiref
