@@ -43,7 +43,7 @@ packaging==24.2
     #   pytest
     #   tox
 pip-tools==7.4.1
-    # via -r requirements/requirements-dev.in
+    # via -r requirements-dev.in
 platformdirs==4.3.6
     # via
     #   tox
@@ -53,7 +53,7 @@ pluggy==1.5.0
     #   pytest
     #   tox
 pre-commit==4.1.0
-    # via -r requirements/requirements-dev.in
+    # via -r requirements-dev.in
 pyproject-api==1.9.0
     # via tox
 pyproject-hooks==1.2.0
@@ -62,13 +62,13 @@ pyproject-hooks==1.2.0
     #   pip-tools
 pytest==8.3.5
     # via
-    #   -r requirements/requirements-dev.in
+    #   -r requirements-dev.in
     #   pytest-cov
     #   pytest-django
 pytest-cov==6.0.0
-    # via -r requirements/requirements-dev.in
+    # via -r requirements-dev.in
 pytest-django==4.10.0
-    # via -r requirements/requirements-dev.in
+    # via -r requirements-dev.in
 pyyaml==6.0.2
     # via
     #   pre-commit
@@ -76,15 +76,15 @@ pyyaml==6.0.2
 requests==2.32.3
     # via responses
 responses==0.25.6
-    # via -r requirements/requirements-dev.in
-ruff==0.9.10
-    # via -r requirements/requirements-dev.in
+    # via -r requirements-dev.in
+ruff==0.11.0
+    # via -r requirements-dev.in
 tox==4.24.2
     # via
-    #   -r requirements/requirements-dev.in
+    #   -r requirements-dev.in
     #   tox-pyenv
 tox-pyenv==1.1.0
-    # via -r requirements/requirements-dev.in
+    # via -r requirements-dev.in
 urllib3==2.3.0
     # via
     #   requests
