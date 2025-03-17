@@ -75,7 +75,7 @@ pyyaml==6.0.2
     #   responses
 requests==2.32.3
     # via responses
-responses==0.25.6
+responses==0.25.7
     # via -r requirements-dev.in
 ruff==0.11.0
     # via -r requirements-dev.in
