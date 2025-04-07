@@ -4,11 +4,11 @@ asgiref==3.8.1
     # via
     #   django
     #   django-allauth
-django==5.1.7
+django==5.1.8
     # via
-    #   -r requirements/requirements.in
+    #   -r requirements.in
     #   django-allauth
 django-allauth==65.5.0
-    # via -r requirements/requirements.in
+    # via -r requirements.in
 sqlparse==0.5.3
     # via django
