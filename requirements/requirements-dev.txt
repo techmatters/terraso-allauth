@@ -67,7 +67,7 @@ pytest==8.3.5
     #   -r requirements-dev.in
     #   pytest-cov
     #   pytest-django
-pytest-cov==6.0.0
+pytest-cov==6.1.1
     # via -r requirements-dev.in
 pytest-django==4.11.1
     # via -r requirements-dev.in
