@@ -82,7 +82,7 @@ requests==2.32.4
     # via responses
 responses==0.25.8
     # via -r requirements-dev.in
-ruff==0.12.9
+ruff==0.12.10
     # via -r requirements-dev.in
 tox==4.28.4
     # via -r requirements-dev.in
