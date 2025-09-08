@@ -87,6 +87,10 @@ setuptools==80.9.0
 tomli==2.2.1
     # via coverage
 tox==4.30.2
+    # via
+    #   -r requirements/requirements-dev.in
+    #   tox-gh-actions
+tox-gh-actions==3.3.0
     # via -r requirements/requirements-dev.in
 urllib3==2.5.0
     # via
