@@ -17,10 +17,6 @@ lint:
 setup-git-hooks:
 	@pre-commit install
 
-format: ${VIRTUAL_ENV}/scripts/black ${VIRTUAL_ENV}/scripts/isort
-	isort --atomic terraso_allauth tests
-	black terraso_allauth tests
-
 lock: pip-tools
 	CUSTOM_COMPILE_COMMAND="make lock" uv pip compile --upgrade --output-file requirements/requirements.txt requirements/requirements.in
 	CUSTOM_COMPILE_COMMAND="make lock" uv pip compile --upgrade --output-file requirements/requirements-dj2.txt requirements/requirements-dj2.in
