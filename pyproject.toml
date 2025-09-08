@@ -21,7 +21,6 @@ classifiers = [
     "Topic :: Internet :: WWW/HTTP",
     "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
 ]
-dynamic = ["version"]
 
 [project.urls]
 Homepage = "https://www.github.com/techmatters/terraso-allauth"
