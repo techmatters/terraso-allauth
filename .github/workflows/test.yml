@@ -53,7 +53,7 @@ jobs:
         uses: astral-sh/setup-uv@v6
         with:
           enable-cache: true
-          cache-dependency-glob: 'requirements**.txt'
+          cache-dependency-glob: 'requirements/requirements**.txt'
 
       - name: Run tests
         run: tox
