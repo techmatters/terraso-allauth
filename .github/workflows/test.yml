@@ -56,4 +56,6 @@ jobs:
           cache-dependency-glob: 'requirements/requirements**.txt'
 
       - name: Run tests
-        run: tox
+        run: |
+          pip install tox
+          tox
