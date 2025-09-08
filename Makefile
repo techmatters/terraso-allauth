@@ -6,7 +6,7 @@ install:
 	uv pip install -r requirements/requirements.txt $(UV_FLAGS)
 
 install-dev:
-	uv pip install -r requirements/requirements-dev.txt $(UV_FLAGS)
+	uv pip install -r requirements/requirements-dev-py313.txt $(UV_FLAGS)
 
 format:
 	ruff format terraso_allauth
