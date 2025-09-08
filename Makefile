@@ -25,6 +25,7 @@ lock:
 	CUSTOM_COMPILE_COMMAND="make lock" uv pip compile --upgrade --output-file requirements/requirements-dj5.txt requirements/requirements-dj5.in
 
 lock-dev:
+	CUSTOM_COMPILE_COMMAND="make lock-dev" uv pip compile --upgrade --python-version 3.8 --output-file requirements/requirements-dev-py38.txt requirements/requirements-dev.in
 	CUSTOM_COMPILE_COMMAND="make lock-dev" uv pip compile --upgrade --python-version 3.9 --output-file requirements/requirements-dev-py39.txt requirements/requirements-dev.in
 	CUSTOM_COMPILE_COMMAND="make lock-dev" uv pip compile --upgrade --python-version 3.10 --output-file requirements/requirements-dev-py310.txt requirements/requirements-dev.in
 	CUSTOM_COMPILE_COMMAND="make lock-dev" uv pip compile --upgrade --python-version 3.11 --output-file requirements/requirements-dev-py311.txt requirements/requirements-dev.in
