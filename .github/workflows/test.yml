@@ -55,10 +55,5 @@ jobs:
           enable-cache: true
           cache-dependency-glob: 'requirements**.txt'
 
-      - name: Install Python dependencies
-        run: |
-          make install-dev DC_ENV=ci
-          pip install tox-gh-actions
-
       - name: Run tests
         run: tox
