@@ -27,8 +27,5 @@ lock:
 lock-dev:
 	CUSTOM_COMPILE_COMMAND="make lock-dev" uv pip compile --upgrade --output-file requirements/requirements-dev.txt requirements/requirements-dev.in
 
-test-ci:
-	tox
-
 ${VIRTUAL_ENV}/scripts/ruff:
 	uv pip install ruff

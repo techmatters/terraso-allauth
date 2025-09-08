@@ -61,4 +61,4 @@ jobs:
           pip install tox-gh-actions
 
       - name: Run tests
-        run: make test-ci
+        run: tox -e py${{ matrix.python-version//./ }}
