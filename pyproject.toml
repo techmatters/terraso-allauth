@@ -1,14 +1,36 @@
 [project]
 name = "terraso_allauth"
 readme = "README.md"
-license = {file = "LICENSE"}
+license = "AGPL-3.0-or-later"
+authors = [{ name = "Caio Carrara" }]
 version = "2.0.0"
+description = "A Django app to plug Terraso as a provider to django-allauth."
+requires-python = ">=3.8,<4.0"
+classifiers = [
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://www.github.com/techmatters/terraso-allauth"
+Issues = "https://www.github.com/techmatters/terraso-allauth/issues"
+
 
 [build-system]
-requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+requires = ["setuptools>=61.2", "wheel", "setuptools_scm[toml]>=6.2"]
 build-backend = 'setuptools.build_meta'
-
-[tool.setuptools_scm]
 
 [tool.ruff]
 exclude = ["migrations"]
@@ -19,3 +41,25 @@ known-first-party = ["terraso_allauth"]
 
 [tool.ruff.lint]
 extend-ignore = ["E203"]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.pytest.ini_options]
+django_find_project = false
+django_settings_module = "tests.settings"
+pythonpath = ". terraso_allauth"
+python_files = ["tests.py", "test_*.py", "*_tests.py"]
+addopts = "--nomigrations"
+
+[tool.coverage.run]
+source = ["."]
+omit = ["*/migrations/*", "*/tests/*", "*/test_*.py", ".tox"]
+
+[tool.coverage.report]
+ignore_errors = true
+show_missing = true
+
+[tool.setuptools.packages.find]
+exclude = ["tests", "tests.*"]
+namespaces = false
