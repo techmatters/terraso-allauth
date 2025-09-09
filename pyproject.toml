@@ -5,7 +5,7 @@ license = "AGPL-3.0-or-later"
 authors = [{ name = "Caio Carrara" }]
 version = "2.0.0"
 description = "A Django app to plug Terraso as a provider to django-allauth."
-requires-python = ">=3.8,<4.0"
+requires-python = ">=3.10,<4.0"
 classifiers = [
     "Environment :: Web Environment",
     "Framework :: Django",
@@ -15,9 +15,10 @@ classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Internet :: WWW/HTTP",
     "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
 ]
