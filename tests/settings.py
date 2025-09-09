@@ -1,3 +1,4 @@
+import allauth
 import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -34,6 +35,9 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
 ]
+
+if hasattr(allauth.account.middleware, "AccountMiddleware"):
+    MIDDLEWARE.append("allauth.account.middleware.AccountMiddleware")
 
 
 SOCIALACCOUNT_PROVIDERS = {
