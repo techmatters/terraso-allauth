@@ -92,7 +92,7 @@ tomli==2.2.1
     #   pyproject-api
     #   pytest
     #   tox
-tox==4.30.2
+tox==4.30.3
     # via -r requirements-dev.in
 typing-extensions==4.15.0
     # via
