@@ -26,7 +26,7 @@ filelock==3.19.1
     # via
     #   tox
     #   virtualenv
-identify==2.6.14
+identify==2.6.15
     # via pre-commit
 idna==3.10
     # via requests
