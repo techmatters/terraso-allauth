@@ -8,7 +8,7 @@ django==4.2.24
     # via
     #   -r requirements-dj4.in
     #   django-allauth
-django-allauth==65.11.1
+django-allauth==65.12.0
     # via -r requirements-dj4.in
 sqlparse==0.5.3
     # via django
