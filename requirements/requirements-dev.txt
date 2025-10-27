@@ -80,7 +80,7 @@ responses==0.25.8
     # via -r requirements-dev.in
 ruff==0.14.1
     # via -r requirements-dev.in
-tox==4.31.0
+tox==4.32.0
     # via -r requirements-dev.in
 urllib3==2.5.0
     # via
