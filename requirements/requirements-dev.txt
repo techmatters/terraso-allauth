@@ -51,7 +51,7 @@ pluggy==1.6.0
     #   tox
 pre-commit==4.4.0
     # via -r requirements-dev.in
-pyenv-inspect==0.4.0
+pyenv-inspect==0.5.0
     # via virtualenv-pyenv
 pygments==2.19.2
     # via pytest
@@ -91,7 +91,7 @@ virtualenv==20.35.4
     #   pre-commit
     #   tox
     #   virtualenv-pyenv
-virtualenv-pyenv==0.5.0
+virtualenv-pyenv==0.6.0
     # via -r requirements-dev.in
 wheel==0.45.1
     # via pip-tools
