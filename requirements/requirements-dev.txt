@@ -49,7 +49,7 @@ pluggy==1.6.0
     #   pytest
     #   pytest-cov
     #   tox
-pre-commit==4.4.0
+pre-commit==4.5.0
     # via -r requirements-dev.in
 pyenv-inspect==0.4.0
     # via virtualenv-pyenv
