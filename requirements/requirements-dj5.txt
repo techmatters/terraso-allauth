@@ -8,7 +8,7 @@ django==5.2.6
     # via
     #   -r requirements-dj5.in
     #   django-allauth
-django-allauth==65.13.0
+django-allauth==65.13.1
     # via -r requirements-dj5.in
 sqlparse==0.5.3
     # via django
