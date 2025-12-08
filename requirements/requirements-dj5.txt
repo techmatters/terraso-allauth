@@ -4,7 +4,7 @@ asgiref==3.11.0
     # via
     #   django
     #   django-allauth
-django==5.2.6
+django==6.0
     # via
     #   -r requirements-dj5.in
     #   django-allauth
