@@ -82,7 +82,7 @@ ruff==0.14.7
     # via -r requirements-dev.in
 tox==4.32.0
     # via -r requirements-dev.in
-urllib3==2.5.0
+urllib3==2.6.0
     # via
     #   requests
     #   responses
