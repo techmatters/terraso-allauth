@@ -10,5 +10,5 @@ django==4.2.24
     #   django-allauth
 django-allauth==65.13.1
     # via -r requirements-dj4.in
-sqlparse==0.5.4
+sqlparse==0.5.5
     # via django
