@@ -20,7 +20,7 @@ coverage[toml]==7.10.6
     # via pytest-cov
 distlib==0.4.0
     # via virtualenv
-filelock==3.20.1
+filelock==3.20.3
     # via
     #   tox
     #   virtualenv
@@ -80,7 +80,7 @@ responses==0.25.8
     # via -r requirements-dev.in
 ruff==0.14.10
     # via -r requirements-dev.in
-tox==4.32.0
+tox==4.34.1
     # via -r requirements-dev.in
 urllib3==2.6.2
     # via
