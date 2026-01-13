@@ -1,7 +1,7 @@
 
 # Terraso django-allauth provider
 
-Pluggable [Django](https://www.djangoproject.com/) app to add [Terraso](https://terraso.org) as a provider to [django-allauth](https://django-allauth.readthedocs.io/en/latest/).
+Pluggable [Django](https://www.djangoproject.com/) app to add [Terraso](https://terraso.org) as an auth provider for [django-allauth](https://django-allauth.readthedocs.io/en/latest/). Note that this is meant to be used in a Django backend which will be signed into using a Terraso instance as the sign in provider (i.e., not to be included in the Terraso backend itself). It's published to (a PyPI package)[https://pypi.org/project/terraso-allauth/].
 
 ## Installation
 
