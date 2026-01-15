@@ -1,3 +1,4 @@
+import importlib.util
 import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -34,6 +35,10 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
 ]
+
+if importlib.util.find_spec("allauth.account.middleware") is not None:
+    if "allauth.account.middleware.AccountMiddleware" not in MIDDLEWARE:
+        MIDDLEWARE.append("allauth.account.middleware.AccountMiddleware")
 
 
 SOCIALACCOUNT_PROVIDERS = {
