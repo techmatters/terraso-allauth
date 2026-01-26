@@ -38,6 +38,7 @@ packaging==25.0
     #   pyproject-api
     #   pytest
     #   tox
+    #   wheel
 pip-tools==7.5.2
     # via -r requirements-dev.in
 platformdirs==4.5.1
@@ -93,5 +94,5 @@ virtualenv==20.35.4
     #   virtualenv-pyenv
 virtualenv-pyenv==0.6.0
     # via -r requirements-dev.in
-wheel==0.45.1
+wheel==0.46.3
     # via pip-tools
